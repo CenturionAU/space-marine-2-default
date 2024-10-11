@@ -35,10 +35,9 @@ Some of these seperated folders will be modifying the same files so you'll eithe
 - All player melee weapons have had the small delay between each swing eliminated, resulting in faster attack speed.
 
 ## Installation Instructions
-### Release
 1. Download the latest release of ```my-values.zip```.
 2. Open or extract ```my-values.zip```.
 3. Open ```/Space Marine 2/client_pc/root/paks/client/default/default_other.pak```.
 4. Copy the ```ssl``` folder from ```my-values``` to ```default_other```.
 
-### Source Code
+If you want to mix and match which modifications you want to use from this collection, you'll need to download the source code and apply the changes yourself. VS Code has a compare feature that highlights all the discrepencies between two files so you can edit or add in the specific modified values you want to your own game files.
