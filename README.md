@@ -20,6 +20,8 @@ There will also be a folder for the unedited vanilla files in case you want to r
 
 These modifications are client-side and will only affect your player character but you can still play online with friends.
 
+Some of these seperated folders will be modifying the same files so you'll either need to combine them individually (I recommend VS code's compare feature) or use the releases within this repo which have a combination of my preferred modifications.
+
 ### executions-restore-health
 - Executions restore a small amount of player health, depending on the enemy type.
 
@@ -31,3 +33,12 @@ These modifications are client-side and will only affect your player character b
 
 ### melee-increased-speed
 - All player melee weapons have had the small delay between each swing eliminated, resulting in faster attack speed.
+
+## Installation Instructions
+### Release
+1. Download the latest release of ```my-values.zip```.
+2. Open or extract ```my-values.zip```.
+3. Open ```/Space Marine 2/client_pc/root/paks/client/default/default_other.pak```.
+4. Copy the ```ssl``` folder from ```my-values``` to ```default_other```.
+
+### Source Code
