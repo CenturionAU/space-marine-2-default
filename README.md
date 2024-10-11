@@ -26,5 +26,8 @@ These modifications are client-side and will only affect your player character b
 ### guns-no-spread
 - All player ranged weapons have zero spread. There's still recoil but all your shots will hit centre of your crosshair.
 
+### guns-infinite-magazine
+- All player ranged weapons have infinite magazines.
+
 ### melee-increased-speed
 - All player melee weapons have had the small delay between each swing eliminated, resulting in faster attack speed.
