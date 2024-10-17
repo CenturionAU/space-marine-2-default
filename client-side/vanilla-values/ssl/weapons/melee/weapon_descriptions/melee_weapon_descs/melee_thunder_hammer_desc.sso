@@ -511,7 +511,7 @@ comboDesc   =   {
                   "TriggerEvent_1_3_1_1/TriggerBlueprintEvent"
                ]
                OnLightHold   =   [
-                  "MeleeComboStrike_3_2_2_1/AddStrikeToCombo"
+                  "TriggerEvent_1_3_1_2_E9uaPq3W/TriggerBlueprintEvent"
                ]
                __type   =   "BlueprintNodeMeleeComboStrike"
             }
@@ -559,7 +559,7 @@ comboDesc   =   {
                   "TriggerEvent_1_3_1_2_1/TriggerBlueprintEvent"
                ]
                OnLightHold   =   [
-                  "MeleeComboStrike_3_2_1/AddStrikeToCombo"
+                  "TriggerEvent_1_3_1_2_E9uaJffA/TriggerBlueprintEvent"
                ]
                __type   =   "BlueprintNodeMeleeComboStrike"
             }
@@ -576,19 +576,6 @@ comboDesc   =   {
                }
                __type   =   "BlueprintNodeTriggerCustomEvent"
             }
-            MeleeComboStrike_3_2_1   =   {
-               sslModule   =   "weapons.controllers.melee_controller.combo.blueprint_node_melee_combo_strike"
-               viewData   =   {
-                  x   =   7350
-                  y   =   8050
-               }
-               strikeLibraryLinkRef   =   {
-                  sslModule   =   "weapons.controllers.melee_controller.combo.strike_settings_link_ref_param"
-                  def   =   "ThunderHammerLight4"
-                  __type   =   "StrikeSettingsLinkRefParam"
-               }
-               __type   =   "BlueprintNodeMeleeComboStrike"
-            }
             TriggerEvent_1_3_1_1   =   {
                sslModule   =   "extensions.blueprints.flow.blueprint_node_trigger_custom_event"
                viewData   =   {
@@ -601,19 +588,6 @@ comboDesc   =   {
                   __type   =   "StringRefParam"
                }
                __type   =   "BlueprintNodeTriggerCustomEvent"
-            }
-            MeleeComboStrike_3_2_2_1   =   {
-               sslModule   =   "weapons.controllers.melee_controller.combo.blueprint_node_melee_combo_strike"
-               viewData   =   {
-                  x   =   7100
-                  y   =   7650
-               }
-               strikeLibraryLinkRef   =   {
-                  sslModule   =   "weapons.controllers.melee_controller.combo.strike_settings_link_ref_param"
-                  def   =   "ThunderHammerLight4"
-                  __type   =   "StrikeSettingsLinkRefParam"
-               }
-               __type   =   "BlueprintNodeMeleeComboStrike"
             }
             MeleeComboStrike_3_3   =   {
                sslModule   =   "weapons.controllers.melee_controller.combo.blueprint_node_melee_combo_strike"
@@ -1021,6 +995,48 @@ comboDesc   =   {
                   "MeleeComboStrike_5_1_2_1/AddStrikeToCombo"
                ]
                __type   =   "BlueprintNodeIf"
+            }
+            HandleEvent_1_E9uaIFd4   =   {
+               sslModule   =   "extensions.blueprints.flow.blueprint_node_handle_event"
+               viewData   =   {
+                  x   =   9750
+                  y   =   6350
+               }
+               OnHandle   =   [
+                  "MeleeComboStrike_3_1/AddStrikeToCombo"
+               ]
+               eventUidRefParam   =   {
+                  sslModule   =   "ssl.lib.blueprint.blueprint"
+                  def   =   "continue_hold_tap_combo"
+                  __type   =   "StringRefParam"
+               }
+               __type   =   "BlueprintNodeHandleEvent"
+            }
+            TriggerEvent_1_3_1_2_E9uaJffA   =   {
+               sslModule   =   "extensions.blueprints.flow.blueprint_node_trigger_custom_event"
+               viewData   =   {
+                  x   =   7350
+                  y   =   8050
+               }
+               eventUid   =   {
+                  sslModule   =   "ssl.lib.blueprint.blueprint"
+                  def   =   "continue_hold_tap_combo"
+                  __type   =   "StringRefParam"
+               }
+               __type   =   "BlueprintNodeTriggerCustomEvent"
+            }
+            TriggerEvent_1_3_1_2_E9uaPq3W   =   {
+               sslModule   =   "extensions.blueprints.flow.blueprint_node_trigger_custom_event"
+               viewData   =   {
+                  x   =   7100
+                  y   =   7650
+               }
+               eventUid   =   {
+                  sslModule   =   "ssl.lib.blueprint.blueprint"
+                  def   =   "continue_hold_tap_combo"
+                  __type   =   "StringRefParam"
+               }
+               __type   =   "BlueprintNodeTriggerCustomEvent"
             }
          }
          variables   =   {

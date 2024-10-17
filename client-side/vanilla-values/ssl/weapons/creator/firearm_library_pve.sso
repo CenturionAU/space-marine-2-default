@@ -15317,7 +15317,7 @@ firearms   =   {
       category   =   "PISTOL"
       sightPreset   =   "UNIQUE"
       shellDescriptions   =   {
-         bolts   =   {
+         thermal_ray   =   {
             projectileType   =   {
                projectileType   =   "volkite_pistol"
                __type   =   "ClientProjectileType"
@@ -15325,8 +15325,8 @@ firearms   =   {
             endEffectsType   =   "volkite_shot"
             shotCreatorSettings   =   {
                headshotMult   =   1
-               damage   =   0.6
-               heavyHitDamage   =   0.5
+               damage   =   0.5
+               heavyHitDamage   =   0
                damagerLink   =   {
                   damagerDescUid   =   "volkite_damager"
                   __type   =   "DamagerDescriptionLink"
@@ -15341,31 +15341,20 @@ firearms   =   {
                   __type   =   "SplineLinear1d"
                }
                penetrationPreset   =   "no_penetration"
+               sideEffects   =   [
+                  {
+                     type   =   "VOLKITE_EXPLOSION"
+                     value   =   10
+                  }
+               ]
                __type   =   "ShotCreatorSettings"
-            }
-            flyBySettings   =   {
-               soundDescEnemy   =   {
-                  type   =   {
-                     name   =   "wpn_projectile_bolter"
-                     __type   =   "GameSound"
-                  }
-                  __type   =   "GameSoundDesc"
-               }
-               soundDescAlly   =   {
-                  type   =   {
-                     name   =   ""
-                     __type   =   "GameSound"
-                  }
-                  __type   =   "GameSoundDesc"
-               }
-               __type   =   "FlyBySettings"
             }
             __type   =   "ShellDescription"
          }
       }
       barrelDescriptions   =   {
          common   =   {
-            shellName   =   "bolts"
+            shellName   =   "thermal_ray"
             clipName   =   "default_clip"
             shootSettings   =   {
                fireRate   =   {
@@ -15457,8 +15446,8 @@ firearms   =   {
                   __type   =   "TargetRecoilSettings"
                }
                dynamicCameraDistanceSettings   =   {
-                  blindPresetUid   =   "hgun_bolt_pistol_blind"
-                  miniZoomPresetUid   =   "hgun_bolt_pistol_minizoom"
+                  blindPresetUid   =   "hgun_volkite_pistol_blind"
+                  miniZoomPresetUid   =   "hgun_volkite_pistol_minizoom"
                   __type   =   "DynamicCameraDistanceSettings"
                }
                __type   =   "RecoilSettings"
@@ -15497,7 +15486,7 @@ firearms   =   {
       ammoSettings   =   {
          typeData   =   {
             ammo_pistol   =   {
-               maxAmount   =   500
+               maxAmount   =   550
                __type   =   "AmmoTypeSettings"
             }
          }
@@ -15510,7 +15499,7 @@ firearms   =   {
       clipsSettings   =   {
          default_clip   =   {
             ammoType   =   "ammo_pistol"
-            maxAmmo   =   50
+            maxAmmo   =   110
             magazine   =   {
                type   =   {
                   properties   =   {

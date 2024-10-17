@@ -291,6 +291,9 @@ finisherPresets   =   {
             healthRegenPercentByKill   =   0
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   100
+            armorRegenModifiers   =   [
+               "ARMOR_REGEN_BY_FINISHER_COMMON"
+            ]
             __type   =   "DamagePointsRestoringFinisherSettings"
          }
          ELITE   =   {
@@ -318,6 +321,9 @@ finisherPresets   =   {
             healthRegenPercentByKill   =   0
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   400
+            armorRegenModifiers   =   [
+               "ARMOR_REGEN_BY_FINISHER_MINIBOSS"
+            ]
             __type   =   "DamagePointsRestoringFinisherSettings"
          }
          BOSS   =   {
@@ -325,6 +331,9 @@ finisherPresets   =   {
             healthRegenPercentByKill   =   0
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   400
+            armorRegenModifiers   =   [
+               "ARMOR_REGEN_BY_FINISHER_BOSS"
+            ]
             __type   =   "DamagePointsRestoringFinisherSettings"
          }
          FODDER   =   {
@@ -332,6 +341,9 @@ finisherPresets   =   {
             healthRegenPercentByKill   =   0
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   100
+            armorRegenModifiers   =   [
+               "ARMOR_REGEN_BY_FINISHER_FODDER"
+            ]
             __type   =   "DamagePointsRestoringFinisherSettings"
          }
       }
@@ -342,6 +354,9 @@ finisherPresets   =   {
             healthRegenPercentByKill   =   0
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   100
+            armorRegenModifiers   =   [
+               "ARMOR_REGEN_BY_FINISHER_COMMON"
+            ]
             __type   =   "DamagePointsRestoringFinisherSettings"
          }
          ELITE   =   {
@@ -372,6 +387,9 @@ finisherPresets   =   {
             healthRegenPercentByKill   =   0
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   400
+            armorRegenModifiers   =   [
+               "ARMOR_REGEN_BY_FINISHER_MINIBOSS"
+            ]
             __type   =   "DamagePointsRestoringFinisherSettings"
          }
          BOSS   =   {
@@ -380,6 +398,9 @@ finisherPresets   =   {
             healthRegenPercentByKill   =   0
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   400
+            armorRegenModifiers   =   [
+               "ARMOR_REGEN_BY_FINISHER_BOSS"
+            ]
             __type   =   "DamagePointsRestoringFinisherSettings"
          }
          FODDER   =   {
@@ -388,6 +409,9 @@ finisherPresets   =   {
             healthRegenPercentByKill   =   0
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   100
+            armorRegenModifiers   =   [
+               "ARMOR_REGEN_BY_FINISHER_FODDER"
+            ]
             __type   =   "DamagePointsRestoringFinisherSettings"
          }
       }
