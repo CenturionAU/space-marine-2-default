@@ -5210,7 +5210,7 @@ modificatorsGroups   =   [
          hgun_volkite_pistol_02   =   {
             modificators   =   {
                ModificatorDamageAmount   =   {
-                  shellName   =   "bolts"
+                  shellName   =   "thermal_ray"
                   modificator   =   10
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
@@ -5234,14 +5234,24 @@ modificatorsGroups   =   [
                   ]
                   __type   =   "FirearmDescriptionModificatorMagazine"
                }
+                              ModificatorClipAmmo   =   {
+                  applyType   =   "ABSOLUTE"
+                  modificator   =   5
+                  __type   =   "FirearmDescriptionModificatorClipAmmo"
+               }
+               ModificatorAmmoPool   =   {
+                  applyType   =   "ABSOLUTE"
+                  modificator   =   50
+                  __type   =   "FirearmDescriptionModificatorAmmoPool"
+               }
             }
             __type   =   "FirearmModificatorsGroup"
          }
          hgun_volkite_pistol_02_a   =   {
             modificators   =   {
                ModificatorDamageAmount   =   {
-                  shellName   =   "bolts"
-                  modificator   =   10
+                  shellName   =   "thermal_ray"
+                  modificator   =   20
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
                ModificatorMagazine   =   {
@@ -5270,7 +5280,7 @@ modificatorsGroups   =   [
          hgun_volkite_pistol_03   =   {
             modificators   =   {
                ModificatorDamageAmount   =   {
-                  shellName   =   "bolts"
+                  shellName   =   "thermal_ray"
                   modificator   =   10
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
@@ -5294,14 +5304,24 @@ modificatorsGroups   =   [
                   ]
                   __type   =   "FirearmDescriptionModificatorMagazine"
                }
+               ModificatorClipAmmo   =   {
+                  applyType   =   "ABSOLUTE"
+                  modificator   =   10
+                  __type   =   "FirearmDescriptionModificatorClipAmmo"
+               }
+               ModificatorAmmoPool   =   {
+                  applyType   =   "ABSOLUTE"
+                  modificator   =   100
+                  __type   =   "FirearmDescriptionModificatorAmmoPool"
+               }
             }
             __type   =   "FirearmModificatorsGroup"
          }
          hgun_volkite_pistol_03_a   =   {
             modificators   =   {
                ModificatorDamageAmount   =   {
-                  shellName   =   "bolts"
-                  modificator   =   10
+                  shellName   =   "thermal_ray"
+                  modificator   =   40
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
                ModificatorMagazine   =   {
@@ -5330,7 +5350,7 @@ modificatorsGroups   =   [
          hgun_volkite_pistol_04   =   {
             modificators   =   {
                ModificatorDamageAmount   =   {
-                  shellName   =   "bolts"
+                  shellName   =   "thermal_ray"
                   modificator   =   10
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
@@ -5354,14 +5374,24 @@ modificatorsGroups   =   [
                   ]
                   __type   =   "FirearmDescriptionModificatorMagazine"
                }
+               ModificatorClipAmmo   =   {
+                  applyType   =   "ABSOLUTE"
+                  modificator   =   15
+                  __type   =   "FirearmDescriptionModificatorClipAmmo"
+               }
+               ModificatorAmmoPool   =   {
+                  applyType   =   "ABSOLUTE"
+                  modificator   =   150
+                  __type   =   "FirearmDescriptionModificatorAmmoPool"
+               }
             }
             __type   =   "FirearmModificatorsGroup"
          }
          hgun_volkite_pistol_04_a   =   {
             modificators   =   {
                ModificatorDamageAmount   =   {
-                  shellName   =   "bolts"
-                  modificator   =   10
+                  shellName   =   "thermal_ray"
+                  modificator   =   80
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
                ModificatorMagazine   =   {
