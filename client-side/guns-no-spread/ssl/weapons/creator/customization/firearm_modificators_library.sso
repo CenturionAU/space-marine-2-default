@@ -5234,7 +5234,7 @@ modificatorsGroups   =   [
                   ]
                   __type   =   "FirearmDescriptionModificatorMagazine"
                }
-                              ModificatorClipAmmo   =   {
+               ModificatorClipAmmo   =   {
                   applyType   =   "ABSOLUTE"
                   modificator   =   5
                   __type   =   "FirearmDescriptionModificatorClipAmmo"
@@ -5593,8 +5593,8 @@ godlikeModificatorPresets   =   {
                   __type   =   "RecoilSettings"
                }
                spreadSettings   =   {
-                  minBulletSpread   =   0.0
-                  maxBulletSpread   =   0.0
+                  minBulletSpread   =   0.1
+                  maxBulletSpread   =   1.7
                   spreadEnergyDesc   =   {
                      type   =   {
                         energyRegenerationRules   =   {
@@ -5610,13 +5610,13 @@ godlikeModificatorPresets   =   {
                   spreadSpline   =   {
                      spline   =   [
                         0,
-                        0,
-                        00,
-                        00,
-                        00,
-                        00,
-                        000,
-                        00
+                        1,
+                        25,
+                        30,
+                        55,
+                        33,
+                        100,
+                        26
                      ]
                      __type   =   "SplineLinear1d"
                   }
@@ -5756,15 +5756,15 @@ godlikeModificatorPresets   =   {
                   __type   =   "RecoilSettings"
                }
                spreadSettings   =   {
-                  minSpreadAngle   =   0
-                  maxSpreadAngle   =   0
+                  minSpreadAngle   =   1
+                  maxSpreadAngle   =   1
                   multishotLoadParameters   =   [
                      {
                         sprdAnglePart   =   4
                      }
                   ]
-                  minBulletSpread   =   0.0
-                  maxBulletSpread   =   0.0
+                  minBulletSpread   =   0.4
+                  maxBulletSpread   =   0.7
                   spreadEnergyDesc   =   {
                      type   =   {
                         energyRegenerationRules   =   {
@@ -5780,9 +5780,9 @@ godlikeModificatorPresets   =   {
                   spreadSpline   =   {
                      spline   =   [
                         0,
-                        00,
-                        000,
-                        00
+                        20,
+                        100,
+                        50
                      ]
                      __type   =   "SplineLinear1d"
                   }
@@ -6070,8 +6070,8 @@ godlikeModificatorPresets   =   {
                   __type   =   "RecoilSettings"
                }
                spreadSettings   =   {
-                  minBulletSpread   =   0.0
-                  maxBulletSpread   =   0.0
+                  minBulletSpread   =   0.1
+                  maxBulletSpread   =   1.7
                   spreadEnergyDesc   =   {
                      type   =   {
                         energyRegenerationRules   =   {
@@ -6087,13 +6087,13 @@ godlikeModificatorPresets   =   {
                   spreadSpline   =   {
                      spline   =   [
                         0,
-                        0,
-                        00,
-                        00,
-                        00,
-                        00,
-                        000,
-                        00
+                        1,
+                        25,
+                        30,
+                        55,
+                        33,
+                        100,
+                        26
                      ]
                      __type   =   "SplineLinear1d"
                   }
@@ -6238,15 +6238,15 @@ godlikeModificatorPresets   =   {
                   __type   =   "RecoilSettings"
                }
                spreadSettings   =   {
-                  minSpreadAngle   =   0
-                  maxSpreadAngle   =   0
+                  minSpreadAngle   =   1
+                  maxSpreadAngle   =   1
                   multishotLoadParameters   =   [
                      {
                         sprdAnglePart   =   4
                      }
                   ]
-                  minBulletSpread   =   0.0
-                  maxBulletSpread   =   0.0
+                  minBulletSpread   =   0.4
+                  maxBulletSpread   =   0.7
                   spreadEnergyDesc   =   {
                      type   =   {
                         energyRegenerationRules   =   {
@@ -6262,9 +6262,9 @@ godlikeModificatorPresets   =   {
                   spreadSpline   =   {
                      spline   =   [
                         0,
-                        00,
-                        000,
-                        00
+                        20,
+                        100,
+                        50
                      ]
                      __type   =   "SplineLinear1d"
                   }
@@ -6552,8 +6552,8 @@ godlikeModificatorPresets   =   {
                   __type   =   "RecoilSettings"
                }
                spreadSettings   =   {
-                  minBulletSpread   =   0.0
-                  maxBulletSpread   =   0.0
+                  minBulletSpread   =   0.1
+                  maxBulletSpread   =   1.7
                   spreadEnergyDesc   =   {
                      type   =   {
                         energyRegenerationRules   =   {
@@ -6569,13 +6569,13 @@ godlikeModificatorPresets   =   {
                   spreadSpline   =   {
                      spline   =   [
                         0,
-                        0,
-                        00,
-                        00,
-                        00,
-                        00,
-                        000,
-                        00
+                        1,
+                        25,
+                        30,
+                        55,
+                        33,
+                        100,
+                        26
                      ]
                      __type   =   "SplineLinear1d"
                   }
@@ -6720,15 +6720,15 @@ godlikeModificatorPresets   =   {
                   __type   =   "RecoilSettings"
                }
                spreadSettings   =   {
-                  minSpreadAngle   =   0
-                  maxSpreadAngle   =   0
+                  minSpreadAngle   =   1
+                  maxSpreadAngle   =   1
                   multishotLoadParameters   =   [
                      {
                         sprdAnglePart   =   4
                      }
                   ]
-                  minBulletSpread   =   0.0
-                  maxBulletSpread   =   0.0
+                  minBulletSpread   =   0.4
+                  maxBulletSpread   =   0.7
                   spreadEnergyDesc   =   {
                      type   =   {
                         energyRegenerationRules   =   {
@@ -6744,9 +6744,9 @@ godlikeModificatorPresets   =   {
                   spreadSpline   =   {
                      spline   =   [
                         0,
-                        00,
-                        000,
-                        00
+                        20,
+                        100,
+                        50
                      ]
                      __type   =   "SplineLinear1d"
                   }
@@ -7026,8 +7026,8 @@ godlikeModificatorPresets   =   {
                   __type   =   "RecoilSettings"
                }
                spreadSettings   =   {
-                  minBulletSpread   =   0.00
-                  maxBulletSpread   =   0.0
+                  minBulletSpread   =   0.05
+                  maxBulletSpread   =   1.1
                   spreadEnergyDesc   =   {
                      type   =   {
                         energyRegenerationRules   =   {
@@ -7043,13 +7043,13 @@ godlikeModificatorPresets   =   {
                   spreadSpline   =   {
                      spline   =   [
                         0,
-                        0,
-                        00,
-                        00,
-                        00,
-                        00,
-                        000,
-                        00
+                        1,
+                        35,
+                        35,
+                        65,
+                        36,
+                        100,
+                        33
                      ]
                      __type   =   "SplineLinear1d"
                   }
