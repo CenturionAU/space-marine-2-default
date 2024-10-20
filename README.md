@@ -14,8 +14,7 @@ bypassing the game's Easy Anti Cheat (EAC).
 - **Health on Executions:** Executions restore a small amount of player health, regardless of 
 contested health status.
 - **No Melee Delay:** The small delay between each melee attack has been removed, resulting in 
-faster melee. The speed of the individual swings remain the same but overall melee speed is 
-increased.
+faster melee.
 - **No Ranged Spread:** Player ranged weapons have had their spread removed, vastly increasing precision.
 - **Infinite Magazines:** Player ranged weapons have infinite magazines, effectively a bottomless clip.
 - **Increased Damage:** Player ranged and melee weapons deal increased damage.
