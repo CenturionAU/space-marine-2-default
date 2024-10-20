@@ -19,6 +19,7 @@ increased.
 - **No Ranged Spread:** Player ranged weapons have had their spread removed, vastly increasing precision.
 - **Infinite Magazines:** Player ranged weapons have infinite magazines, effectively a bottomless clip.
 - **Increased Damage:** Player ranged and melee weapons deal increased damage.
+- **Heavy Bolter Fire Rate:** Heavy bolter has a flat fire rate and doesn't need to be spun up.
 
 ## Installation Instructions
 WinRAR is recommended for this process.
