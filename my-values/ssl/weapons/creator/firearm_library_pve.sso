@@ -5420,7 +5420,7 @@ firearms   =   {
             clipName   =   "default_clip"
             shootSettings   =   {
                fireRate   =   {
-                  shotsPerMin   =   300
+                  shotsPerMin   =   600
                   __type   =   "FixedFireRate"
                }
                fireRateAffectShootAnim   =   False
@@ -5580,25 +5580,8 @@ firearms   =   {
             clipName   =   "default_clip"
             shootSettings   =   {
                fireRate   =   {
-                  speedUpSplineFireRatePerSec   =   {
-                     spline   =   [
-                        0,
-                        300,
-                        0.8,
-                        600
-                     ]
-                     __type   =   "SplineLinear1d"
-                  }
-                  slowdownTimerRegen   =   {
-                     type   =   {
-                        recoverSpeed   =   100
-                        ticksPerSec   =   24
-                        regenStartingDelay   =   0.8
-                        __type   =   "EnergyTimerRegen"
-                     }
-                     __type   =   "EnergyTimerRegenDesc"
-                  }
-                  __type   =   "FloatingFireRate"
+                  shotsPerMin   =   600
+                  __type   =   "FixedFireRate"
                }
                shootLogicUid   =   "autofire"
                __type   =   "ShootSettings"
