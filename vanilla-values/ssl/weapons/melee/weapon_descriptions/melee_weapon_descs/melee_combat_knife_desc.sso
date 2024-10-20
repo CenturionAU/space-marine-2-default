@@ -177,7 +177,7 @@ comboDesc   =   {
    }
    slowdownSettings   =   {
       sslModule   =   "weapons.melee.weapon_descriptions.melee_combo_slowdown_settings"
-      slowdownTime   =   0.000
+      slowdownTime   =   0.099
       slowdownDesc   =   {
          type   =   {
             __type   =   "MeleeComboSlowdownProject"
@@ -343,7 +343,7 @@ comboDesc   =   {
                   "Pipe_2/Input"
                ]
                OnLightHold   =   [
-                  "MeleeComboStrike_1/AddStrikeToCombo"
+                  "MeleeComboStrike/AddStrikeToCombo"
                ]
                __type   =   "BlueprintNodeMeleeComboStrike"
             }
@@ -632,8 +632,8 @@ comboDesc   =   {
                   sslModule   =   "weapons.controllers.melee_controller.combo.melee_preparing"
                   minPreparationDuration   =   0.4
                   maxDuration   =   5
-                  maxTicks   =   1
-                  bonusDamage   =   100
+                  maxTicks   =   2
+                  bonusDamage   =   200
                   bonusPeriodSec   =   1
                   shakeUid   =   "KnifeLightHoldPrepare"
                   preparingAnim   =   {
@@ -916,7 +916,7 @@ comboDesc   =   {
       }
       PerkDash   =   {
          sslModule   =   "weapons.controllers.melee_controller.combo.melee_combo_strike_settings"
-         maxDamagedActors   =   8
+         maxDamagedActors   =   20
          useWeaponTypeOverride   =   True
          weaponType   =   "BODY"
          animLink   =   {
@@ -953,7 +953,7 @@ comboDesc   =   {
                canKnockback   =   True
                isPervasive   =   True
                knockbackAngle   =   15
-               radiusScale   =   3
+               radiusScale   =   4
                damageLocator   =   "Trajectory"
                damageOffset   =   {
                   y   =   1.5
@@ -1193,11 +1193,12 @@ comboDesc   =   {
                __type   =   "DamagerDescriptionLink"
             }
             impulse   =   400
-            healthDmgPercent   =   100
+            healthDmgPercent   =   200
             heavyHitDmgPercent   =   200
             canKnockback   =   True
             isGuardbreak   =   False
             isPervasive   =   True
+            shouldForceHeavyHit   =   True
             knockbackAngle   =   13
             radiusScale   =   1
             __type   =   "MeleeDamageSettings"
