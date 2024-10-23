@@ -288,7 +288,7 @@ finisherPresets   =   {
       meleeSettings   =   {
          COMMON   =   {
             healthRestoringPercent   =   100
-            healthRegenPercentByKill   =   5
+            healthRegenPercentByKill   =  10
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   100
             armorRegenModifiers   =   [
@@ -298,7 +298,7 @@ finisherPresets   =   {
          }
          ELITE   =   {
             healthRestoringPercent   =   100
-            healthRegenPercentByKill   =  10
+            healthRegenPercentByKill   =  15
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   100
             armorRegenModifiers   =   [
@@ -308,7 +308,7 @@ finisherPresets   =   {
          }
          SPECIAL   =   {
             healthRestoringPercent   =   100
-            healthRegenPercentByKill   =  15
+            healthRegenPercentByKill   =  20
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   100
             armorRegenModifiers   =   [
@@ -318,7 +318,7 @@ finisherPresets   =   {
          }
          MINIBOSS   =   {
             healthRestoringPercent   =   100
-            healthRegenPercentByKill   =  15
+            healthRegenPercentByKill   =  20
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   400
             armorRegenModifiers   =   [
@@ -328,7 +328,7 @@ finisherPresets   =   {
          }
          BOSS   =   {
             healthRestoringPercent   =   100
-            healthRegenPercentByKill   =  20
+            healthRegenPercentByKill   =  25
             isArmorRegenBySegments   =   True
             armorRegenPercentByKill   =   400
             armorRegenModifiers   =   [
