@@ -185,7 +185,7 @@ firearms   =   {
       ammoSettings   =   {
          typeData   =   {
             ammo_arifle   =   {
-               maxAmount   =   175
+               maxAmount   =   210
                __type   =   "AmmoTypeSettings"
             }
          }
@@ -1027,7 +1027,7 @@ firearms   =   {
                }
                __type   =   "SpreadControllerSettings"
             }
-            isIsolated   =   True
+            isIsolated   =   False
             __type   =   "BarrelDescription"
          }
          scope   =   {
@@ -1139,7 +1139,7 @@ firearms   =   {
                }
                __type   =   "SpreadControllerSettings"
             }
-            isIsolated   =   True
+            isIsolated   =   False
             __type   =   "BarrelDescription"
          }
       }
@@ -1794,6 +1794,7 @@ firearms   =   {
                }
                __type   =   "SpreadControllerSettings"
             }
+            isIsolated   =   False
             __type   =   "BarrelDescription"
          }
          scope   =   {
@@ -1960,6 +1961,7 @@ firearms   =   {
                }
                __type   =   "SpreadControllerSettings"
             }
+            isIsolated   =   False
             __type   =   "BarrelDescription"
          }
       }
@@ -2098,7 +2100,7 @@ firearms   =   {
             }
             endEffectsType   =   "bolter_bullet"
             shotCreatorSettings   =   {
-               headshotMult   =   2
+               headshotMult   =   2.5
                damage   =   10
                heavyHitDamage   =   0.5
                headshotHeavyHitMult   =   2
@@ -2137,7 +2139,7 @@ firearms   =   {
             clipName   =   "default_clip"
             shootSettings   =   {
                fireRate   =   {
-                  shotsPerMin   =   50
+                  shotsPerMin   =   60
                   __type   =   "FixedFireRate"
                }
                fireRateAffectShootAnim   =   False
@@ -2385,7 +2387,7 @@ firearms   =   {
             shotCreatorSettings   =   {
                sslModule   =   "weapons.controllers.shot_creators.shot_creator_settings"
                headshotMult   =   1
-               damage   =   1.5
+               damage   =   3
                heavyHitDamage   =   0.5
                damagerLink   =   {
                   sslModule   =   "damage.damager.damager_description_link"
@@ -2396,8 +2398,12 @@ firearms   =   {
                   spline   =   [
                      0,
                      1,
-                     100,
-                     1
+                     10,
+                     1,
+                     13,
+                     0.5,
+                     20,
+                     0.5
                   ]
                   __type   =   "SplineLinear1d"
                }
@@ -2691,6 +2697,7 @@ firearms   =   {
       pickupVisualUid   =   "smg_occulus_bolt_carbine"
       actorName   =   "smg_occulus_bolt_carbine"
       category   =   "SMG"
+      sightPreset   =   "UNIQUE"
       shellDescriptions   =   {
          bolts   =   {
             sslModule   =   "weapons.creator.description.shell_description"
@@ -2702,7 +2709,7 @@ firearms   =   {
             endEffectsType   =   "bolter_bullet"
             shotCreatorSettings   =   {
                sslModule   =   "weapons.controllers.shot_creators.shot_creator_settings"
-               headshotMult   =   1
+               headshotMult   =   1.5
                damage   =   1.7
                heavyHitDamage   =   0.5
                damagerLink   =   {
@@ -2816,6 +2823,184 @@ firearms   =   {
                         movementOverrideSettings   =   {
                            spreadMin   =   10
                            spreadMax   =   2
+                           __type   =   "RecoilPresetSettings"
+                        }
+                        __type   =   "RecoilPreset"
+                     }
+                     SCOPE   =   {
+                        baseSettings   =   {
+                           recoil   =   0.3
+                           spreadMin   =   0.4
+                           spreadMax   =   0.4
+                           shake   =   1.2
+                           __type   =   "RecoilPresetSettings"
+                        }
+                        movementOverrideSettings   =   {
+                           recoil   =   0.3
+                           spreadMin   =   0.4
+                           spreadMax   =   0.4
+                           shake   =   1.2
+                           __type   =   "RecoilPresetSettings"
+                        }
+                        __type   =   "RecoilPreset"
+                     }
+                  }
+                  weaponOffSetIronSight   =   {
+                     sslModule   =   "math.vector_3d"
+                     y   =   -0.4
+                     z   =   0.25
+                     __type   =   "Vector3d"
+                  }
+                  __type   =   "WeaponRecoilSettings"
+               }
+               targetRecoilSettings   =   {
+                  sslModule   =   "weapons.creator.description.target_recoil_settings"
+                  minDistToWeapon   =   3
+                  minDistToCamera   =   2.5
+                  recoilByTime   =   {
+                     sslModule   =   "math.spline_1d"
+                     spline   =   [
+                        0,
+                        0.1
+                     ]
+                     __type   =   "SplineLinear1d"
+                  }
+                  recoilRecoverSpeed   =   2
+                  recoilSectorsCount   =   4
+                  recoilSectorAngle1   =   1
+                  recoilSectorAngle2   =   1.2
+                  recoilSectorAngle3   =   1.5
+                  recoilSectorsOrder   =   "abcdefghijkl"
+                  swingSpeed   =   1
+                  weaponTurnSpeed   =   60
+                  weaponTurnSlowDown   =   7
+                  isRotatingToCamera   =   True
+                  __type   =   "TargetRecoilSettings"
+               }
+               dynamicCameraDistanceSettings   =   {
+                  blindPresetUid   =   "smg_occulus_bolt_carbine_blind"
+                  miniZoomPresetUid   =   "smg_occulus_bolt_carbine_minizoom"
+                  __type   =   "DynamicCameraDistanceSettings"
+               }
+               __type   =   "RecoilSettings"
+            }
+            spreadSettings   =   {
+               sslModule   =   "weapons.properties.spread.spread_controller_settings"
+               minBulletSpread   =   0.25
+               maxBulletSpread   =   2.3
+               spreadEnergyDesc   =   {
+                  sslModule   =   "player.abilities.energy.energy_desc"
+                  type   =   {
+                     sslModule   =   "player.abilities.energy.energy"
+                     energyRegenerationRules   =   {
+                        SpreadRegen   =   {
+                           sslModule   =   "player.abilities.energy.regen.energy_spread_regen"
+                           pushPercent   =   170
+                           __type   =   "EnergySpreadRegen"
+                        }
+                     }
+                     __type   =   "Energy"
+                  }
+                  __type   =   "EnergyDesc"
+               }
+               spreadSpline   =   {
+                  sslModule   =   "math.spline_1d"
+                  spline   =   [
+                     0,
+                     1,
+                     20,
+                     22.5,
+                     60,
+                     27.5,
+                     100,
+                     25
+                  ]
+                  __type   =   "SplineLinear1d"
+               }
+               __type   =   "SpreadControllerSettings"
+            }
+            __type   =   "BarrelDescription"
+         }
+         score   =   {
+            sslModule   =   "weapons.creator.description.barrel_description"
+            shellName   =   "bolts"
+            clipName   =   "default_clip"
+            shootSettings   =   {
+               sslModule   =   "weapons.creator.description.shoot_settings"
+               fireRate   =   {
+                  sslModule   =   "weapons.controllers.fire_rate_controller.fixed_fire_rate"
+                  shotsPerMin   =   500
+                  __type   =   "FixedFireRate"
+               }
+               shootLogicUid   =   "autofire"
+               __type   =   "ShootSettings"
+            }
+            recoilSettings   =   {
+               sslModule   =   "weapons.creator.description.recoil_settings"
+               cameraRecoilSettings   =   {
+                  sslModule   =   "camera.ctrl_camera_recoil"
+                  recoilByTimeHorizontal   =   {
+                     spline   =   [
+                        0,
+                        0,
+                        10,
+                        -2
+                     ]
+                     __type   =   "SplineLinear1d"
+                  }
+                  recoilByTimeVertical   =   {
+                     sslModule   =   "math.spline_1d"
+                     spline   =   [
+                        0,
+                        0,
+                        3,
+                        3.5,
+                        10,
+                        6.5
+                     ]
+                     argumentScale   =   1
+                     __type   =   "SplineLinear1d"
+                  }
+                  riseTimeSpeed   =   2.1
+                  recoveryDelay   =   0.15
+                  recoverSpeedVertical   =   23
+                  recoverSpeedHorizontal   =   23
+                  modifiers   =   {
+                     CameraRecoilDeviceModifier   =   {
+                        deviceType   =   "GAMEPAD"
+                        modificatorHorizontal   =   -30
+                        modificatorVertical   =   -30
+                     }
+                  }
+                  __type   =   "CameraRecoilSettings"
+               }
+               weaponRecoilSettings   =   {
+                  sslModule   =   "weapons.creator.description.weapon_recoil_settings"
+                  recoilPresets   =   {
+                     BLIND   =   {
+                        baseSettings   =   {
+                           spreadMin   =   10
+                           spreadMax   =   2
+                           __type   =   "RecoilPresetSettings"
+                        }
+                        movementOverrideSettings   =   {
+                           spreadMin   =   10
+                           spreadMax   =   2
+                           __type   =   "RecoilPresetSettings"
+                        }
+                        __type   =   "RecoilPreset"
+                     }
+                     SCOPE   =   {
+                        baseSettings   =   {
+                           recoil   =   0.6
+                           spreadMin   =   0.4
+                           spreadMax   =   0.4
+                           __type   =   "RecoilPresetSettings"
+                        }
+                        movementOverrideSettings   =   {
+                           recoil   =   0.6
+                           spreadMin   =   0.4
+                           spreadMax   =   0.4
                            __type   =   "RecoilPresetSettings"
                         }
                         __type   =   "RecoilPreset"
@@ -2938,10 +3123,10 @@ firearms   =   {
       }
       aimSettings   =   {
          sslModule   =   "weapons.creator.description.aim_settings"
-         logicUid   =   "zoom_augmented_zoom"
+         logicUid   =   "zoom_scope"
          fovCollection   =   {
             DEFAULT   =   {
-               __value   =   40
+               __value   =   30
             }
          }
          autoAimSettingsDefault   =   {
@@ -2961,11 +3146,11 @@ firearms   =   {
                autoaimNearFalloffDistance   =   0
                __type   =   "AutoAimSettings"
             }
-            AUGMENTED_ZOOM   =   {
-               deviationAngle   =   2.5
-               autoaimAngle   =   2.5
-               autoaimDistance   =   35
-               autoaimFalloffDistance   =   25
+            SCOPE   =   {
+               deviationAngle   =   1.7
+               autoaimAngle   =   1.7
+               autoaimDistance   =   65
+               autoaimFalloffDistance   =   55
                autoaimNearFalloffDistance   =   0
                __type   =   "AutoAimSettings"
             }
@@ -2983,10 +3168,10 @@ firearms   =   {
                magnetismNearFalloffDistance   =   5
                __type   =   "MagnetismSettings"
             }
-            AUGMENTED_ZOOM   =   {
-               magnetismAngle   =   3
-               magnetismDistance   =   45
-               magnetismFalloffDistance   =   35
+            SCOPE   =   {
+               magnetismAngle   =   4
+               magnetismDistance   =   120
+               magnetismFalloffDistance   =   110
                magnetismNearFalloffDistance   =   5
                __type   =   "MagnetismSettings"
             }
@@ -2997,6 +3182,10 @@ firearms   =   {
       overheatSettings   =   {
          barrelsHeatPerShot   =   {
             auto   =   {
+               value   =   5
+               __type   =   "HeatPercentPerShot"
+            }
+            score   =   {
                value   =   5
                __type   =   "HeatPercentPerShot"
             }
@@ -15325,7 +15514,7 @@ firearms   =   {
             endEffectsType   =   "volkite_shot"
             shotCreatorSettings   =   {
                headshotMult   =   1
-               damage   =   0.5
+               damage   =   0.6
                heavyHitDamage   =   0
                damagerLink   =   {
                   damagerDescUid   =   "volkite_damager"
@@ -15335,8 +15524,10 @@ firearms   =   {
                   spline   =   [
                      0,
                      1,
-                     100,
-                     1
+                     70,
+                     1,
+                     80,
+                     0.8
                   ]
                   __type   =   "SplineLinear1d"
                }
@@ -15347,6 +15538,7 @@ firearms   =   {
                      value   =   10
                   }
                ]
+               maxDistance   =   120
                __type   =   "ShotCreatorSettings"
             }
             __type   =   "ShellDescription"
@@ -15486,7 +15678,7 @@ firearms   =   {
       ammoSettings   =   {
          typeData   =   {
             ammo_pistol   =   {
-               maxAmount   =   550
+               maxAmount   =   500
                __type   =   "AmmoTypeSettings"
             }
          }
@@ -15499,7 +15691,7 @@ firearms   =   {
       clipsSettings   =   {
          default_clip   =   {
             ammoType   =   "ammo_pistol"
-            maxAmmo   =   110
+            maxAmmo   =   100
             magazine   =   {
                type   =   {
                   properties   =   {

@@ -1019,14 +1019,26 @@ modificatorsGroups   =   [
                   modificator   =   10
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
-               ModificatorBulletSpread   =   {
+               ModificatorBulletSpreadCOMMON   =   {
                   barrelName   =   "auto"
                   applyType   =   "PERCENT"
                   modificator   =   15
                   __type   =   "FirearmDescriptionModificatorBulletSpread"
                }
-               ModificatorRecoilRiseTimeSpeed   =   {
+               ModificatorBulletSpreadSCOPE   =   {
+                  barrelName   =   "score"
+                  applyType   =   "PERCENT"
+                  modificator   =   15
+                  __type   =   "FirearmDescriptionModificatorBulletSpread"
+               }
+               ModificatorRecoilRiseTimeSpeedCOMMON   =   {
                   barrelName   =   "auto"
+                  applyType   =   "PERCENT"
+                  modificator   =   -20
+                  __type   =   "FirearmDescriptionModificatorRecoilRiseTimeSpeed"
+               }
+               ModificatorRecoilRiseTimeSpeedSCOPE   =   {
+                  barrelName   =   "score"
                   applyType   =   "PERCENT"
                   modificator   =   -20
                   __type   =   "FirearmDescriptionModificatorRecoilRiseTimeSpeed"
@@ -1101,14 +1113,26 @@ modificatorsGroups   =   [
                   modificator   =   30
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
-               ModificatorBulletSpread   =   {
+               ModificatorBulletSpreadCOMMON   =   {
                   barrelName   =   "auto"
                   applyType   =   "PERCENT"
                   modificator   =   -30
                   __type   =   "FirearmDescriptionModificatorBulletSpread"
                }
-               ModificatorRecoilRiseTimeSpeed   =   {
+               ModificatorBulletSpreadSCOPE   =   {
+                  barrelName   =   "score"
+                  applyType   =   "PERCENT"
+                  modificator   =   -30
+                  __type   =   "FirearmDescriptionModificatorBulletSpread"
+               }
+               ModificatorRecoilRiseTimeSpeedCOMMON   =   {
                   barrelName   =   "auto"
+                  applyType   =   "PERCENT"
+                  modificator   =   -40
+                  __type   =   "FirearmDescriptionModificatorRecoilRiseTimeSpeed"
+               }
+               ModificatorRecoilRiseTimeSpeedSCOPE   =   {
+                  barrelName   =   "score"
                   applyType   =   "PERCENT"
                   modificator   =   -40
                   __type   =   "FirearmDescriptionModificatorRecoilRiseTimeSpeed"
@@ -1213,14 +1237,26 @@ modificatorsGroups   =   [
                   modificator   =   60
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
-               ModificatorBulletSpread   =   {
+               ModificatorBulletSpreadCOMMON   =   {
                   barrelName   =   "auto"
                   applyType   =   "PERCENT"
                   modificator   =   -45
                   __type   =   "FirearmDescriptionModificatorBulletSpread"
                }
-               ModificatorRecoilRiseTimeSpeed   =   {
+               ModificatorBulletSpreadSCOPE   =   {
+                  barrelName   =   "score"
+                  applyType   =   "PERCENT"
+                  modificator   =   -45
+                  __type   =   "FirearmDescriptionModificatorBulletSpread"
+               }
+               ModificatorRecoilRiseTimeSpeedCOMMON   =   {
                   barrelName   =   "auto"
+                  applyType   =   "PERCENT"
+                  modificator   =   -60
+                  __type   =   "FirearmDescriptionModificatorRecoilRiseTimeSpeed"
+               }
+               ModificatorRecoilRiseTimeSpeedSCOPE   =   {
+                  barrelName   =   "score"
                   applyType   =   "PERCENT"
                   modificator   =   -60
                   __type   =   "FirearmDescriptionModificatorRecoilRiseTimeSpeed"
@@ -1335,14 +1371,26 @@ modificatorsGroups   =   [
                   modificator   =   42
                   __type   =   "FirearmDescriptionModificatorAmmoPool"
                }
-               ModificatorBulletSpread   =   {
+               ModificatorBulletSpreadCOMMON   =   {
                   barrelName   =   "auto"
                   applyType   =   "PERCENT"
                   modificator   =   -30
                   __type   =   "FirearmDescriptionModificatorBulletSpread"
                }
-               ModificatorRecoilRiseTimeSpeed   =   {
+               ModificatorBulletSpreadSCOPE   =   {
+                  barrelName   =   "score"
+                  applyType   =   "PERCENT"
+                  modificator   =   -30
+                  __type   =   "FirearmDescriptionModificatorBulletSpread"
+               }
+               ModificatorRecoilRiseTimeSpeedCOMMON   =   {
                   barrelName   =   "auto"
+                  applyType   =   "PERCENT"
+                  modificator   =   -40
+                  __type   =   "FirearmDescriptionModificatorRecoilRiseTimeSpeed"
+               }
+               ModificatorRecoilRiseTimeSpeedSCOPE   =   {
+                  barrelName   =   "score"
                   applyType   =   "PERCENT"
                   modificator   =   -40
                   __type   =   "FirearmDescriptionModificatorRecoilRiseTimeSpeed"
@@ -3144,7 +3192,7 @@ modificatorsGroups   =   [
                }
                ModificatorAmmoPool   =   {
                   applyType   =   "ABSOLUTE"
-                  modificator   =   15
+                  modificator   =   18
                   __type   =   "FirearmDescriptionModificatorAmmoPool"
                }
                ModificatorMagazine   =   {
@@ -3224,7 +3272,7 @@ modificatorsGroups   =   [
                }
                ModificatorAmmoPool   =   {
                   applyType   =   "ABSOLUTE"
-                  modificator   =   35
+                  modificator   =   42
                   __type   =   "FirearmDescriptionModificatorAmmoPool"
                }
                ModificatorMagazine   =   {
@@ -3304,7 +3352,7 @@ modificatorsGroups   =   [
                }
                ModificatorAmmoPool   =   {
                   applyType   =   "ABSOLUTE"
-                  modificator   =   50
+                  modificator   =   60
                   __type   =   "FirearmDescriptionModificatorAmmoPool"
                }
                ModificatorMagazine   =   {
@@ -4905,25 +4953,25 @@ modificatorsGroups   =   [
                ModificatorHeatPercentPerShotCommon   =   {
                   barrelName   =   "pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -3.34
+                  modificator   =   -1.97
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotCharged   =   {
                   barrelName   =   "big_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -16.67
+                  modificator   =   -6.91
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotCommonADS   =   {
                   barrelName   =   "minizoom_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -3.34
+                  modificator   =   -1.97
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotChargedADS   =   {
                   barrelName   =   "minizoom_big_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -16.67
+                  modificator   =   -6.91
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorContinousHeatingSpeed   =   {
@@ -4999,25 +5047,25 @@ modificatorsGroups   =   [
                ModificatorHeatPercentPerShotCommon   =   {
                   barrelName   =   "pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -5.72
+                  modificator   =   -3.47
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotCharged   =   {
                   barrelName   =   "big_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -25
+                  modificator   =   -11.24
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotCommonADS   =   {
                   barrelName   =   "minizoom_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -5.72
+                  modificator   =   -3.47
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotChargedADS   =   {
                   barrelName   =   "minizoom_big_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -25
+                  modificator   =   -11.24
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorContinousHeatingSpeed   =   {
@@ -5093,25 +5141,25 @@ modificatorsGroups   =   [
                ModificatorHeatPercentPerShotCommon   =   {
                   barrelName   =   "pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -7.5
+                  modificator   =   -4.66
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotCharged   =   {
                   barrelName   =   "big_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -30
+                  modificator   =   -14.21
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotCommonADS   =   {
                   barrelName   =   "minizoom_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -7.5
+                  modificator   =   -4.66
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorHeatPercentPerShotChargedADS   =   {
                   barrelName   =   "minizoom_big_pew_pew"
                   applyType   =   "ABSOLUTE"
-                  modificator   =   -30
+                  modificator   =   -14.21
                   __type   =   "FirearmDescriptionModificatorHeatPercentPerShot"
                }
                ModificatorContinousHeatingSpeed   =   {
@@ -5236,7 +5284,7 @@ modificatorsGroups   =   [
                }
                ModificatorClipAmmo   =   {
                   applyType   =   "ABSOLUTE"
-                  modificator   =   5
+                  modificator   =   10
                   __type   =   "FirearmDescriptionModificatorClipAmmo"
                }
                ModificatorAmmoPool   =   {
@@ -5281,7 +5329,7 @@ modificatorsGroups   =   [
             modificators   =   {
                ModificatorDamageAmount   =   {
                   shellName   =   "thermal_ray"
-                  modificator   =   10
+                  modificator   =   30
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
                ModificatorMagazine   =   {
@@ -5306,7 +5354,7 @@ modificatorsGroups   =   [
                }
                ModificatorClipAmmo   =   {
                   applyType   =   "ABSOLUTE"
-                  modificator   =   10
+                  modificator   =   20
                   __type   =   "FirearmDescriptionModificatorClipAmmo"
                }
                ModificatorAmmoPool   =   {
@@ -5351,7 +5399,7 @@ modificatorsGroups   =   [
             modificators   =   {
                ModificatorDamageAmount   =   {
                   shellName   =   "thermal_ray"
-                  modificator   =   10
+                  modificator   =   60
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
                ModificatorMagazine   =   {
@@ -5376,7 +5424,7 @@ modificatorsGroups   =   [
                }
                ModificatorClipAmmo   =   {
                   applyType   =   "ABSOLUTE"
-                  modificator   =   15
+                  modificator   =   30
                   __type   =   "FirearmDescriptionModificatorClipAmmo"
                }
                ModificatorAmmoPool   =   {
@@ -5391,7 +5439,7 @@ modificatorsGroups   =   [
             modificators   =   {
                ModificatorDamageAmount   =   {
                   shellName   =   "thermal_ray"
-                  modificator   =   80
+                  modificator   =   70
                   __type   =   "FirearmDescriptionModificatorDamageAmount"
                }
                ModificatorMagazine   =   {
@@ -5622,7 +5670,7 @@ godlikeModificatorPresets   =   {
                   }
                   __type   =   "SpreadControllerSettings"
                }
-               isIsolated   =   True
+               isIsolated   =   False
                hasUniqueSight   =   True
                __type   =   "BarrelDescription"
             }
@@ -5796,7 +5844,7 @@ godlikeModificatorPresets   =   {
                   ]
                   __type   =   "EffectsSettings"
                }
-               isIsolated   =   True
+               isIsolated   =   False
                hasUniqueSight   =   True
                __type   =   "BarrelDescription"
             }
@@ -6099,7 +6147,7 @@ godlikeModificatorPresets   =   {
                   }
                   __type   =   "SpreadControllerSettings"
                }
-               isIsolated   =   True
+               isIsolated   =   False
                hasUniqueSight   =   True
                __type   =   "BarrelDescription"
             }
@@ -6278,7 +6326,7 @@ godlikeModificatorPresets   =   {
                   ]
                   __type   =   "EffectsSettings"
                }
-               isIsolated   =   True
+               isIsolated   =   False
                hasUniqueSight   =   True
                __type   =   "BarrelDescription"
             }
@@ -6581,7 +6629,7 @@ godlikeModificatorPresets   =   {
                   }
                   __type   =   "SpreadControllerSettings"
                }
-               isIsolated   =   True
+               isIsolated   =   False
                hasUniqueSight   =   True
                __type   =   "BarrelDescription"
             }
@@ -6760,7 +6808,7 @@ godlikeModificatorPresets   =   {
                   ]
                   __type   =   "EffectsSettings"
                }
-               isIsolated   =   True
+               isIsolated   =   False
                hasUniqueSight   =   True
                __type   =   "BarrelDescription"
             }
