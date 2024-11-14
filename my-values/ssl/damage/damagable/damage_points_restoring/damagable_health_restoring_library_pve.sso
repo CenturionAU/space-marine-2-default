@@ -282,6 +282,62 @@ firearmPresets   =   {
       }
       __type   =   "DamagePointsRestoringFirearmPresetPve"
    }
+   volkite   =   {
+      firearmUids   =   [
+         "hgun_volkite_pistol"
+      ]
+      settings   =   {
+         COMMON   =   {
+            healthRestoringPercent   =   1
+            healthRestoringMin   =   0.075
+            shouldRestoreByDamage   =   True
+            healthRegenPercentByHeadshotKill   =   0
+            armorRegenPercentByHeadshotHit   =   0
+            __type   =   "DamagePointsRestoringFirearmSettings"
+         }
+         ELITE   =   {
+            healthRestoringPercent   =   1
+            healthRestoringMin   =   0.075
+            shouldRestoreByDamage   =   True
+            healthRegenPercentByHeadshotKill   =   0
+            armorRegenPercentByHeadshotHit   =   0
+            __type   =   "DamagePointsRestoringFirearmSettings"
+         }
+         SPECIAL   =   {
+            healthRestoringPercent   =   1
+            healthRestoringMin   =   0.075
+            shouldRestoreByDamage   =   True
+            healthRegenPercentByHeadshotKill   =   0
+            armorRegenPercentByHeadshotHit   =   0
+            __type   =   "DamagePointsRestoringFirearmSettings"
+         }
+         MINIBOSS   =   {
+            healthRestoringPercent   =   1
+            healthRestoringMin   =   0.075
+            shouldRestoreByDamage   =   True
+            healthRegenPercentByHeadshotKill   =   0
+            armorRegenPercentByHeadshotHit   =   0
+            __type   =   "DamagePointsRestoringFirearmSettings"
+         }
+         BOSS   =   {
+            healthRestoringPercent   =   1
+            healthRestoringMin   =   0.075
+            shouldRestoreByDamage   =   True
+            healthRegenPercentByHeadshotKill   =   0
+            armorRegenPercentByHeadshotHit   =   0
+            __type   =   "DamagePointsRestoringFirearmSettings"
+         }
+         FODDER   =   {
+            healthRestoringPercent   =   1
+            healthRestoringMin   =   0.075
+            shouldRestoreByDamage   =   True
+            healthRegenPercentByHeadshotKill   =   0
+            armorRegenPercentByHeadshotHit   =   0
+            __type   =   "DamagePointsRestoringFirearmSettings"
+         }
+      }
+      __type   =   "DamagePointsRestoringFirearmPresetPve"
+   }
 }
 finisherPresets   =   {
    default   =   {
