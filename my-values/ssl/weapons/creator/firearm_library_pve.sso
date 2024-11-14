@@ -3707,7 +3707,7 @@ firearms   =   {
          sequenceType   =   "overheat_reload"
          __type   =   "SequenceSettings"
       }
-      isOverheatAffectingShooting   =   True
+      isOverheatAffectingShooting   =   False
       overheatSettings   =   {
          continuousHeatingSpeed   =   15
          barrelsHeatPerShot   =   {
@@ -5267,7 +5267,7 @@ firearms   =   {
          sequenceType   =   "overheat_reload"
          __type   =   "SequenceSettings"
       }
-      isOverheatAffectingShooting   =   True
+      isOverheatAffectingShooting   =   False
       overheatSettings   =   {
          continuousHeatingSpeed   =   10
          barrelsHeatPerShot   =   {
@@ -6003,7 +6003,7 @@ firearms   =   {
          }
          __type   =   "AimSettings"
       }
-      isOverheatAffectingShooting   =   True
+      isOverheatAffectingShooting   =   False
       overheatSettings   =   {
          continuousHeatingSpeed   =   50
          barrelsHeatPerShot   =   {
@@ -6185,27 +6185,8 @@ firearms   =   {
             clipName   =   "default_clip"
             shootSettings   =   {
                fireRate   =   {
-                  speedUpSplineFireRatePerSec   =   {
-                     spline   =   [
-                        0,
-                        300,
-                        0.5,
-                        360,
-                        0.8,
-                        600
-                     ]
-                     __type   =   "SplineLinear1d"
-                  }
-                  slowdownTimerRegen   =   {
-                     type   =   {
-                        recoverSpeed   =   33.3
-                        ticksPerSec   =   24
-                        regenStartingDelay   =   0.5
-                        __type   =   "EnergyTimerRegen"
-                     }
-                     __type   =   "EnergyTimerRegenDesc"
-                  }
-                  __type   =   "FloatingFireRate"
+                  shotsPerMin   =   600
+                  __type   =   "FixedFireRate"
                }
                shootLogicUid   =   "autofire"
                __type   =   "ShootSettings"
@@ -6349,7 +6330,7 @@ firearms   =   {
          }
          __type   =   "AimSettings"
       }
-      isOverheatAffectingShooting   =   True
+      isOverheatAffectingShooting   =   False
       overheatSettings   =   {
          continuousHeatingSpeed   =   35
          barrelsHeatPerShot   =   {
@@ -6639,7 +6620,7 @@ firearms   =   {
          sequenceType   =   "overheat_reload"
          __type   =   "SequenceSettings"
       }
-      isOverheatAffectingShooting   =   True
+      isOverheatAffectingShooting   =   False
       overheatSettings   =   {
          continuousHeatingSpeed   =   50
          barrelsHeatPerShot   =   {
@@ -11928,25 +11909,8 @@ firearms   =   {
             clipName   =   "default_clip"
             shootSettings   =   {
                fireRate   =   {
-                  speedUpSplineFireRatePerSec   =   {
-                     spline   =   [
-                        0,
-                        300,
-                        0.8,
-                        600
-                     ]
-                     __type   =   "SplineLinear1d"
-                  }
-                  slowdownTimerRegen   =   {
-                     type   =   {
-                        recoverSpeed   =   100
-                        ticksPerSec   =   24
-                        regenStartingDelay   =   0.8
-                        __type   =   "EnergyTimerRegen"
-                     }
-                     __type   =   "EnergyTimerRegenDesc"
-                  }
-                  __type   =   "FloatingFireRate"
+                  shotsPerMin   =   600
+                  __type   =   "FixedFireRate"
                }
                shootLogicUid   =   "autofire"
                __type   =   "ShootSettings"
@@ -12179,7 +12143,7 @@ firearms   =   {
          }
          __type   =   "AimSettings"
       }
-      isOverheatAffectingShooting   =   True
+      isOverheatAffectingShooting   =   False
       overheatSettings   =   {
          continuousHeatingSpeed   =   50
          barrelsHeatPerShot   =   {
@@ -12976,7 +12940,7 @@ firearms   =   {
          sequenceType   =   "overheat_reload"
          __type   =   "SequenceSettings"
       }
-      isOverheatAffectingShooting   =   True
+      isOverheatAffectingShooting   =   False
       overheatSettings   =   {
          continuousHeatingSpeed   =   15
          barrelsHeatPerShot   =   {
@@ -13794,7 +13758,7 @@ firearms   =   {
          sequenceType   =   "overheat_reload"
          __type   =   "SequenceSettings"
       }
-      isOverheatAffectingShooting   =   True
+      isOverheatAffectingShooting   =   False
       overheatSettings   =   {
          continuousHeatingSpeed   =   15
          barrelsHeatPerShot   =   {
